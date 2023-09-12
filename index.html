@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  type="text/css" rel="stylesheet" href="css/style.css">
+        <link  type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>TravelPage</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Images\158 - logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" class="buttons">Home</a></li>
+                    <li><a href="#" class="buttons">Products</a></li>
+                    <li><a href="#" class="buttons">About</a></li>
+                    <li><a href="#" class="buttons">Contacts</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="toggle"></i>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h1 class="titles">Adventure</h1>
+              <p class="paragraph">Lorem Ipsum is simply dummy text of the printing 
+                and typesetting industry. Lorem Ipsum has been the 
+                industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled 
+                it to make a type specimen book. It has survived not only 
+                five centuries, but also the leap into electronic 
+                typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of 
+                Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software 
+                like Aldus PageMaker including versions of Lorem Ipsum.</p>  
+                <button>Learn More</button>
+            </div>
+            <div class="images">
+                <div class="img-1"></div>
+            </div>
+        </section>
+
+        <script>
+            const menu = document.querySelector('.menu');
+            const toggle = document.querySelector('#toggle');
+
+            toggle.onclick = function(){
+                console.log('clicked');
+                menu.classList.toggle('active');
+            };
+        
+        </script>
+    </body>
