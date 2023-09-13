@@ -111,8 +111,7 @@ header nav #toggle{
 }
 
 .home .home-content .paragraph{
-    background-color: gainsboro;
-    margin-top: 10px;
+    background-color: white;
     padding: relative;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -146,20 +145,20 @@ header nav #toggle{
         flex-direction: column;
         row-gap: 1.5rem;
         position: absolute;
-        transform: translateY(-100%); 
-        opacity: 0;
+        left: -100%;
         top: 130px;
         width: 100%;
         padding-top: 100px;
         background: #0a2f44;
         height: calc(100vh - 130px);
         z-index: 10;
-        transition: opacity 0.5s ease, transform 0.5s ease;
+        transition: left 0.4s ease;
     }
+
     header nav .menu.active {
-        opacity: 1; /* Aumenta la opacidad */
-        transform: translateY(0); /* Desplaza el menú hacia abajo */
+        left: 0;
     }
+
     header nav .menu li a{
         font-size: 2rem;
         margin-left: unset;
@@ -177,5 +176,7 @@ header nav #toggle{
 
     header nav .menu li a:hover{
         background: #8cdcbe;
+        color: #0a2f44;
+        
     }
 }
